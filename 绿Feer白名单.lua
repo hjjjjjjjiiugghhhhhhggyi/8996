@@ -19,7 +19,7 @@ whitelist = {
 "fshjbgtsgj",
 "hchvJJgJ236",
 " xnxjx4664",
-"xckahns",
+"Move_C",
 "shhdjldn",
 "名字",
 "名字",
