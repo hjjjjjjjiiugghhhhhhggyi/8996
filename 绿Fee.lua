@@ -1,5 +1,5 @@
 local gs = function(service)
-    return game:Ge
+    return game:GetService(service)
 end
 
 local lp = gs("Players").LocalPlayer
@@ -13,7 +13,7 @@ local mouse = game.Players.LocalPlayer:GetMouse()
 local bai = {
     axedupe = false,
     soltnumber = "1",
-    waterwalk = fal公分厚金额就饿就
+    waterwalk = false,
     awaysday = false,
     awaysdnight = false,
     nofog = false,
@@ -21,8 +21,8 @@ local bai = {
     playernamedied = "",
     tptree = "",
     moneyaoumt = 1,
-    moneytoplayername = "" ,哈哈我会误会误会
-    donationRecipient = tostring ( game.Players.LocalPlayer ),
+    moneytoplayername = "",
+    donationRecipient = tostring(game.Players.LocalPlayer),
     autodropae = false,
     farAxeEquip = nil,
     cuttreeselect = "Generic",
@@ -37,8 +37,8 @@ local bai = {
     autofarm1 = false,
     bringamount = 1,
     bringtree = false,
-    dxmz = "" ,
-    颜色= 0 还说啥是说话说啥时候是好收拾收拾干啥坏事上午好,
+    dxmz = "",
+    color = 0,
     0,
     0,
     zlwjia = "",
@@ -109,7 +109,7 @@ spawn(function()
             Color3.fromRGB(255, 0, 0)
         wait(1)
     end
-end
+end)
 game:GetService("Workspace").Stores.WoodRUs.Parts.OPEN24HOURS.SurfaceGui.TextLabel.Text = "作者: 绿";
 game:GetService("Workspace").Stores.WoodRUs.Parts.OPEN24HOURS.SurfaceGui.TextLabel.TextColor3 =
     Color3.fromRGB(255, 0, 0)
@@ -118,6 +118,7 @@ game:GetService("Workspace").Stores.WoodRUs.Parts.SELLWOOD.SurfaceGui.TextLabel.
 game:GetService("Workspace").Stores.WoodRUs.Parts.WOODDROPOFF.SurfaceGui.TextLabel.Text = "感谢使用绿";
 game:GetService("Workspace").Stores.WoodRUs.Parts.WOODDROPOFF.SurfaceGui.TextLabel.TextColor3 =
     Color3.fromRGB(255, 0, 0)
+
 local Player = game.Players.LocalPlayer
 
 local function droptool(Position)
@@ -126,7 +127,7 @@ local function droptool(Position)
         local y = aQ:FindFirstChildOfClass "Tool"
         if y:FindFirstChild("ToolName") then
             game.ReplicatedStorage.Interaction.ClientInteracted:FireServer(b, "Drop tool", Position or
-                game.Players.LocalPlayer.Character.Head.CFra
+                game.Players.LocalPlayer.Character.Head.CFrame)
 
         end
     end
